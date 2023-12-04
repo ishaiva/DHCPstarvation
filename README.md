@@ -25,23 +25,23 @@ This script allows you to simulate a client's DHCP (Dynamic Host Configuration P
    git clone https://github.com/ishaiva/DHCPstarvation.git 
    cd DHCP_Starvation
 
-###Run the script:
+### Run the script:
 
     ```bash
 
-    python dhcp_discover_sender.py
+    python sendingDHCPdiscoverPackets.py
 
     Follow the prompts:
         Enter the network interface (e.g., eth0).
         Enter the number of DHCP discover packets to send.
         Enter the delay between packets in seconds.
 
-###Prerequisites
+### Prerequisites
 
     Python 3.x
     Linux (due to the use of raw sockets)
 
-##How It Works
+## How It Works
 
 The script constructs DHCP Discover packets with randomized source MAC addresses and sends them over the specified network interface. The user is prompted to input the necessary parameters such as the network interface, number of packets, and delay.
 Getting Started
@@ -51,11 +51,11 @@ Disclaimer
 
 This script is intended for educational and testing purposes only. Misuse of this script may violate network policies or applicable laws. Use responsibly and only on networks you have permission to test.
 
-###Author
+### Author
 
 ishaiva
 
-###License
+### License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
